@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to Find the sum of Values
+		of an Array in JavaScript?
+	</title>
+</head>
+
+<body style="text-align:center;">
+	
+	
+	<h3>The Sum of Values of an Array in JavaScript of Given Array: </h3> 
+		[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]<br><br>
+	<button onclick="myGeeks()">
+		Click Here!
+	</button>
+	<br><br>
+	Sum: <span id="GFG"></span>
+
+
+    <h3>The Product of Values of an Array in JavaScript of Given Array: </h3> 
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]<br><br>
+    <button onclick="myProduct()"> 
+        Click Here! 
+    </button>
+    <br><br>
+    Product: <span id="product"></span> 
+	
+	<script>
+		var arr=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+		
+		function sumofArray(sum, num) {
+			return sum + num;
+		}
+		function myGeeks(item) {
+			document.getElementById("GFG").innerHTML
+				= arr.reduce(sumofArray);
+		}
+
+
+        var arr=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+          
+        function productofArray(product, num) { 
+            return product * num; 
+        } 
+        function myProduct(item) { 
+            document.getElementById("product").innerHTML 
+                    = arr.reduce(productofArray); 
+        } 
+	</script>
+</body>
+
+</html>		

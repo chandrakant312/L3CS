@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week-11</title>
+</head>
+
+<body>
+
+      <!-------------------------solution 1-------------->
+    <h1> Solution 1</h1>
+    <script>
+    
+    var now = new Date()
+    var fmtStr = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`
+    document.write(`<p>${fmtStr}</p>`)
+    </script>
+    <hr width="50%" color="skyblue" size="5px" align="left">
+
+    <!-------------------------solution 2-------------->
+    <div id="soln2">
+        <h1>Solution 2</h1>
+       
+        <input type="button" value="Click me!" onclick="soln2()">
+        <h1 id="result">Result:</h2>
+    </div>
+    <hr width="50%" color="skyblue" size="5px" align="left">
+    
+      <!-------------------------solution 3-------------->
+    <div>
+       <h1>Solution 3</h1>
+        <div id="soln3" onmouseover="mOver()" onmouseout="mOut()"><h2>Hover here!</h2></div>
+    </div>
+    <hr width="50%" color="skyblue" size="5px" align="left">
+    
+      <!-------------------------solution 4-------------->
+    <div>
+        <h1>Solution 4</h1>
+        <p id="soln4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint ut exercitationem aut.<br>
+            Ea reiciendis maxime sunt nostrum illo sit maiores, optio a quasi, unde, inventore <br>
+            culpa repudiandae? Accusantium, nobis dicta.
+        </p>
+    </div>
+    <hr width="50%" color="skyblue" size="5px" align="left">
+
+      <!-------------------------solution 5-------------->
+    <div>
+        <h1>Solution 5</h1>
+        <input type="text" id="validator"><br><br>
+        <input type="button" value="valid?" onclick="check_valid()"></input>
+        <div id="status" style="font-size: 30px;"></div>
+        <hr width="50%" color="skyblue" size="5px" align="left">
+      
+        <input type="password" id="pwd"><br><br>
+        <input type="password" id="pwd2"><br><br>
+        <input type="button" value="confirm!" onclick="check_pwd()"></input>
+        <div id="confirmation" style="font-size: 30px;"></div>
+        <hr width="100%" color="skyblue" size="5px" align="left">
+        
+
+    </div>
+    <script src="./week11.js"></script>
+</body>
+
+</html>
